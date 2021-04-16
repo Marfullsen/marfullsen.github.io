@@ -1,40 +1,24 @@
-# [Tailwind Toolbox](https://www.tailwindtoolbox.com/) - [Profile-Card](https://www.tailwindtoolbox.com/templates/profile-card)
+# [Marfullsen.GitHub.io](https://marfullsen.github.io/)
 
-[Profile Card](https://www.tailwindtoolbox.com/templates/profile-card) is a single page template for use as a user profile website / card created in [Tailwind CSS](https://tailwindcss.com/) by [Tailwind Toolbox](https://www.tailwindtoolbox.com/).
+[![Github.io](https://img.shields.io/badge/GitHub%20Pages-Texturas%20CSS-green.svg)](https://marfullsen.github.io/)
+[![Tailwind CSS](https://img.shields.io/badge/Vanilla-JavaScript-yellow.svg)](https://www.tailwindcss.com/)
 
-![Profile Card](https://www.tailwindtoolbox.com/templates/profile-card.png)
+[![Screenshot](./screenshot_001.png)](https://Marfullsen.github.io/)
 
-## Getting Started
+## Marfullsen landing page.
+Página de contato de Marfullsen.
 
-Choose one of the following options to get started:
-* [Download the latest release](https://github.com/tailwindtoolbox/Profile-Card/archive/master.zip)
-* Clone the repo: `git clone https://github.com/tailwindtoolbox/Profile-Card.git`
-* Fork the repo
+- Sitio disponible en español e inglés.
+- Modo nocturno.
 
-## Using the Template
+## Screenshots
+**Tablet**
+[![Screenshot](./screenshot_002.png)](https://Marfullsen.github.io/)
 
-The template is just a HTML file using a full CDN hosted Tailwind CSS file.
+**Mobile**
+[![Screenshot](./screenshot_003.png)](https://Marfullsen.github.io/)
 
-To get the best out of Tailwind CSS, you need to really start customising it.
-Take a look at our [setup guide](https://www.tailwindtoolbox.com/setup) to start tweaking!
+## Créditos
+Gracias a [Tailwind CSS](https://www.tailwindcss.com/), un gran framework para trabajar día a día. ¡La plantilla original está disponible en [tailwindtoolbox.com](https://www.tailwindtoolbox.com/starter-templates) entre las plantillas gratuitas para comenzar a usar el framework!
 
-## Bugs and Issues
-
-Have a bug or an issue with this template? [Open a new issue](https://github.com/tailwindtoolbox/Profile-Card/issues/new) here on GitHub.
-
-## Creator
-
-[Tailwind Toolbox](https://www.tailwindtoolbox.com/) was created by and is maintained by **[Amrit Nagi](https://amritnagi.info/)**, Co-owner of [Astrava.Solutions](https://astrava.solutions).
-
-* https://twitter.com/tailwindtoolbox
-* https://twitter.com/amritnagi
-* https://github.com/tailwindtoolbox
-
-Tailwind Toolbox is based on the [Tailwind CSS](https://www.tailwindcss.com/) framework created by [Adam Wathan](https://twitter.com/adamwathan), [Jonathan Reinink](https://twitter.com/reinink), [David Hemphill](https://twitter.com/davidhemphill) and [Steve Schoger](https://twitter.com/steveschoger)
-
-
-
-
-## Copyright and License
-
-Copyright 2018-2019 Astrava.Solutions Ltd. Code released under the MIT license.
+También agradezco a [screenshots.cloud](https://screenshots.cloud/), por las geniales capturas de pantalla completa del sitio en versión móvil.
