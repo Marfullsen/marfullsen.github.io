@@ -18,9 +18,12 @@ Página de contato de Marfullsen.
 
 **Mobile**
 
-[![Screenshot](./screenshot_003.png)](https://Marfullsen.github.io/)
+[![Screenshot](./screenshot_003_400x866.png)](https://Marfullsen.github.io/)
 
-## Posibles 
+## Futuras implementaciones
+- Traducción al idioma alemán.
+- Traducción al idioma ruso.
+- Traducción al idioma francés.
 
 ## Créditos
 Gracias a [Tailwind CSS](https://www.tailwindcss.com/), un gran framework para trabajar día a día. ¡La plantilla original está disponible en [tailwindtoolbox.com](https://www.tailwindtoolbox.com/starter-templates) entre las plantillas gratuitas para comenzar a usar el framework!
