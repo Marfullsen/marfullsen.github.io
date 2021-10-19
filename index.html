@@ -12,7 +12,7 @@
 	<link rel="stylesheet" href="https://unpkg.com/tailwindcss/dist/tailwind.min.css">
 </head>
 
-<body class="font-sans antialiased text-gray-900 leading-normal tracking-wider bg-cover"
+<body class="font-sans antialiased text-gray-900 leading-normal tracking-wider bg-cover backdrop-filter backdrop-hue-rotate-60"
 	style="background-image:url('assets/img/aurora.jpg');"> 
 	<!-- Thanks to benjamin-suter from pexels bcs of this fantastic image 3617500 -->
 
@@ -24,10 +24,14 @@
 
 	<main class="max-w-4xl flex items-center h-auto lg:h-screen flex-wrap mx-auto my-32 lg:my-0">
 		
-		<!--Img Col-->
+		<!--Imagen Principal (Como columna) -->
 		<section class="w-full lg:w-2/6">
 			<!-- Big profile image for side bar (desktop) -->
-			<img src="assets/img/profile.jpg" alt="profile pic" class="rounded-none lg:rounded-lg shadow-2xl hidden lg:block">
+			<img src="assets/img/profile.jpg"
+				id="profilePicture"
+				alt="profile pic"
+				class="rounded-none lg:rounded-lg shadow-2xl hidden lg:block filter"
+				style="transform: rotateZ(5deg);">
 		</section>	
 
 		<!--Columna principal-->
@@ -45,16 +49,13 @@
 						class="h-4 fill-current text-green-700 pr-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
 						<path
 							d="M9 12H1v6a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-6h-8v2H9v-2zm0-1H0V5c0-1.1.9-2 2-2h4V2a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1h4a2 2 0 0 1 2 2v6h-9V9H9v2zm3-8V2H8v1h4z"/>
-					</svg> <span id="title">Desarrollador Fullstack</span></p>
+					</svg> <span id="title">Desarrollador de Software</span></p>
 				<p id="place" class="pt-2 text-gray-600 text-xs lg:text-sm flex items-center justify-center lg:justify-start">
 					<svg class="h-4 fill-current text-green-700 pr-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
 						<path
 							d="M10 20a10 10 0 1 1 0-20 10 10 0 0 1 0 20zm7.75-8a8.01 8.01 0 0 0 0-4h-3.82a28.81 28.81 0 0 1 0 4h3.82zm-.82 2h-3.22a14.44 14.44 0 0 1-.95 3.51A8.03 8.03 0 0 0 16.93 14zm-8.85-2h3.84a24.61 24.61 0 0 0 0-4H8.08a24.61 24.61 0 0 0 0 4zm.25 2c.41 2.4 1.13 4 1.67 4s1.26-1.6 1.67-4H8.33zm-6.08-2h3.82a28.81 28.81 0 0 1 0-4H2.25a8.01 8.01 0 0 0 0 4zm.82 2a8.03 8.03 0 0 0 4.17 3.51c-.42-.96-.74-2.16-.95-3.51H3.07zm13.86-8a8.03 8.03 0 0 0-4.17-3.51c.42.96.74 2.16.95 3.51h3.22zm-8.6 0h3.34c-.41-2.4-1.13-4-1.67-4S8.74 3.6 8.33 6zM3.07 6h3.22c.2-1.35.53-2.55.95-3.51A8.03 8.03 0 0 0 3.07 6z"/>
 					</svg> Santiago de Chile</p>
-				<p id="info" class="pt-8 text-sm">Desarrollador Fullstack con experiencia en el desarollo de sitios web y
-					aplicaciones de escritorio. Especializado en Python, utilizando actualmente Django. <br><br>¡Dale un vistazo a
-					mis proyectos alojados en <a class="link text-blue-500" data-tippy-content="@Marfullsen"
-						href="https://github.com/Marfullsen">GitHub!</a>.
+				<p id="info" class="pt-8 text-sm">¡Hola! Soy Francisco, soy Desarrollador de Software con experiencia en el desarollo de sitios web y aplicaciones de escritorio. Especializado en <a class="link text-blue-500" data-tippy-content="v3.vuejs.org" href="https://v3.vuejs.org/">Vue3</a>, utilizando actualmente <a class="link text-blue-500" data-tippy-content="v3.vuejs.org" href="https://cli.vuejs.org/">VueCLI.</a><br><br>¡Dale un vistazo a mis proyectos alojados en <a class="link text-blue-500" data-tippy-content="@Marfullsen" href="https://github.com/Marfullsen">GitHub!</a>.
 				</p>
 
 				<article class="pt-8 pb-8 flex justify-center">
@@ -64,7 +65,7 @@
 					</button>
 				</article>
 
-				<article class="lg:pb-0 w-4/5 lg:w-full mx-auto flex items-center justify-center">
+				<article class="lg:pb-0 w-4/5 lg:w-full mx-auto flex items-center justify-center flex-col">
 					<a class="link" href="https://github.com/Marfullsen" data-tippy-content="@marfullsen"><svg
 							class="h-6 fill-current text-gray-600 hover:text-green-700" role="img" viewBox="0 0 24 24"
 							xmlns="http://www.w3.org/2000/svg">
@@ -72,6 +73,13 @@
 							<path
 								d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
 						</svg></a>
+						<!-- hitwebcounter Code START -->
+						<a href="https://github.com/Marfullsen" class="p-2" target="_blank">
+							<img src="https://hitwebcounter.com/counter/counter.php?page=7884607&style=0008&nbdigits=5&type=page&initCount=0" 
+								title="Contador de visitas" 
+								Alt="Web counter"
+								/>
+						</a>
 				</article>
 			</section>
 		</section>
@@ -83,12 +91,13 @@
 		//Init tooltips
 		tippy('.link', {
 			placement: 'bottom'
-		})
+		});
 
 		//Toggle mode
 		const toggle = document.querySelector('.js-change-theme');
 		const body = document.querySelector('body');
 		const profile = document.getElementById('profile');
+		const profilePicture = document.getElementById('profilePicture');
 		const lang = document.querySelector('.lang');
 		const title = document.getElementById('title');
 		const info = document.getElementById('info');
@@ -97,41 +106,70 @@
 		const available_langs = ['es', 'en', 'de'];
 		// TODO: Translate to German language.
 
+		const a_ref_vue3 = '<a class="link text-blue-500" data-tippy-content="v3.vuejs.org" href="https://v3.vuejs.org/">Vue3</a>';
+		const a_ref_vuecli = '<a class="link text-blue-500" data-tippy-content="v3.vuejs.org" href="https://cli.vuejs.org/">VueCLI.</a>';
+
+		function modoOscuro() {
+			localStorage.setItem('modoLuz', 'oscuro');
+			toggle.innerHTML = "☀️";
+			body.classList.remove('backdrop-hue-rotate-60');
+			body.classList.remove('text-gray-900');
+			body.classList.add('text-gray-100');
+			profile.classList.remove('bg-white');
+			profile.classList.add('bg-gray-900');
+			profilePicture.classList.add('saturate-50');
+		}
+
+		function modoClaro() {
+			localStorage.setItem('modoLuz', 'claro');
+			toggle.innerHTML = "🌙";
+			body.classList.add('backdrop-hue-rotate-60');
+			body.classList.remove('text-gray-100');
+			body.classList.add('text-gray-900');
+			profile.classList.remove('bg-gray-900');
+			profile.classList.add('bg-white');
+			profilePicture.classList.remove('saturate-50');
+		}
+
+		function ultimaCondicionLuz() {
+			if (localStorage.getItem('modoLuz') !== 'claro') {
+				modoOscuro();
+			}
+		}
+
+		// Obtener el último modo de luz seleccionado.
+		if(!localStorage.getItem('modoLuz')) {
+			localStorage.setItem('modoLuz', 'claro');
+		} else {
+			ultimaCondicionLuz();
+		}
+
 		lang.addEventListener('click', () => {
 
 			if (lang.classList.contains('es')) {
 				lang.src = 'assets/img/flags/flag-en.png';
 				lang.classList.remove('es');
 				lang.classList.add('en');
-				title.innerHTML = 'Desarrollador Fullstack'
-				info.innerHTML = 'Desarrollador Fullstack con experiencia en el desarollo de sitios web y aplicaciones de escritorio. Especializado en Python, utilizando actualmente Django. <br><br>¡Dale un vistazo a mis proyectos alojados en <a class="link text-blue-500" data-tippy-content="@Marfullsen" href="https://github.com/Marfullsen">GitHub!</a>.'
+				title.innerHTML = 'Desarrollador de Software'
+				info.innerHTML = `¡Hola! Soy Francisco, soy Desarrollador de Software con experiencia en el desarollo de sitios web y aplicaciones de escritorio. Especializado en ${a_ref_vue3}, utilizando actualmente ${a_ref_vuecli}<br><br>¡Dale un vistazo a mis proyectos alojados en <a class="link text-blue-500" data-tippy-content="@Marfullsen" href="https://github.com/Marfullsen">GitHub!</a>.`
 				contact_btn.innerHTML = 'Contacto'
 			}
 			else {
 				lang.src = 'assets/img/flags/flag-es.png'
 				lang.classList.remove('en');
 				lang.classList.add('es');
-				title.innerHTML = 'Fullstack Developer'
-				info.innerHTML = 'Fullstack developer with experience building websites and desktop applications. Specialized in Python, currently working with Django. <br><br>Feel free to take a look at my <a class="link text-blue-500" data-tippy-content="@Marfullsen" href="https://github.com/Marfullsen">GitHub Repos!</a>.'
+				title.innerHTML = 'Software Developer'
+				info.innerHTML = `Hi! My name is Francisco, I\'m a Software Developer with experience building websites and desktop applications. Specialized in ${a_ref_vue3}, currently working with ${a_ref_vuecli}<br><br>Feel free to take a look at my <a class="link text-blue-500" data-tippy-content="@Marfullsen" href="https://github.com/Marfullsen">GitHub Repos!</a>.`
 				contact_btn.innerHTML = 'Contact'
 			}
 		});
-
+		
 		toggle.addEventListener('click', () => {
 
 			if (body.classList.contains('text-gray-900')) {
-				toggle.innerHTML = "☀️";
-				body.classList.remove('text-gray-900');
-				body.classList.add('text-gray-100');
-				profile.classList.remove('bg-white');
-				profile.classList.add('bg-gray-900');
+				modoOscuro();
 			} else {
-				toggle.innerHTML = "🌙";
-				body.classList.remove('text-gray-100');
-				body.classList.add('text-gray-900');
-				profile.classList.remove('bg-gray-900');
-				profile.classList.add('bg-white');
-
+				modoClaro();
 			}
 		});
 	</script>
